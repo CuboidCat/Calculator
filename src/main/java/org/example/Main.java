@@ -31,7 +31,6 @@ public class Main {
             switch (seleciton) {
                 case 1:
                     calc.add(scan);
-
                     break;
                 case 2:
                     calc.subtract(scan);
@@ -48,7 +47,13 @@ public class Main {
                 case 6:
                     System.out.println("Select your number:");
                     long num = scan.nextLong();
-                    System.out.println("Your answer is: " + Factorial.factorialRun(num));
+                    int rand = (int) Math.floor(Math.random() * (2-1) + 1);
+                    if (rand == 1) {
+                        System.out.println("Your answer is: " + Factorial.factorialRun(num));
+                    }
+                    else {
+                        System.out.println("Your answer is: " + Factorial.recursiveFactorialRun(num));
+                    }
                     System.out.println("Select next option.");
                 case 7:
                     break;

@@ -36,7 +36,8 @@ public class Calculating {
         double num1 = scan.nextDouble();
         System.out.println("Select second number:");
         double num2 = scan.nextDouble();
-        System.out.println("Your answer is: " + (num1/num2));
+        float result = (float) (num1 / (float) num2);
+        System.out.println("Your answer is: " + result);
         System.out.println("\nSelect next option.");
     }
     public void exponent(Scanner scan) {
